@@ -1,8 +1,8 @@
 class Solver
   def factorial(_num)
-    raise ArgumentError, 'Argument must be a non-negative integer' unless n.is_a?(Integer) && n >= 0
-    return 1 if n.zero?
+    raise ArgumentError, 'Argument must be a non-negative integer' unless _num.is_a?(Integer) && _num >= 0
+    return 1 if _num.zero?
 
-    (1..n).reduce(:*)
+    (1.._num).reduce(:*)
   end
 end
